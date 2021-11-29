@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  color: white;
+  background-color: black;
+  margin: 2rem;
+}
+/* 
+ul {
+  list-style-type: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+} */
+a {
+  padding-right: 2em;
+  color: white;
+}
+.logo {
+    padding-right: 2em;
+    padding-left: 0.6em;
+}
+/* nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat (12, 1fr);
+  grid-area: "h h h h h s s s s s c c";
+}
+.home {
+  grid-area: h;
+}
+.semester {
+  grid-area: s;
+}
+.contact {
+  grid-area: c;
+} */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact {
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 8em;
+  font-weight: 300;
+}
+h2 {
+  font-weight: 400;
+  border-bottom: 0.1em solid white;
+}
+h6 {
+    font-weight: 500;
+    letter-spacing: 0.4em;
+    font-variant: small-caps;
+
+}
+p {
+  line-height: 1.8em;
+}
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 4em;
+  grid-template-columns: repeat (12, 1fr);
+  grid-template-rows: 10% auto;
+  grid-template-areas:
+    "f f f f f f w w w w w w"
+    "f f f f f f w w w w w w"
+    "a a a a a a b b b b b b"
+    "a a a a a a b b b b b b";
+    max-width: 1200px;
+}
+
+.f {
+  grid-area: f;
+  /* background-color: rgb(177, 18, 71); */
+  margin-bottom: 0em;
+}
+.w {
+  grid-area: w;
+  /* background-color: rgb(90, 177, 18); */
+  margin-bottom: 0em;
+}
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+
+}
+.f2{
+    margin-left:auto;
+ 
+
+}
+.f3{
+    margin-left: 2em;
+}
+
+@media (max-width: 600px) {
+    .nav {
+      float: none;
+      width: 100%;
+    }
+    .container {
+        width;: 100%;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat (12, 1fr);
+        grid-template-rows: auto% auto auto;
+        grid-template-areas:
+          "f "
+          "a"
+          "w"
+          "b";
+          max-width: 1200px;
+      }
+
+ footer {
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat (4, 1fr);
+     grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "f1 f1 f1 f1"
+    "f2 f2 f2 f2"
+    "f3 f3 f3 f3";
+ }
+
+ .f1{
+     grid-area: f1;
+ }
+ .f2{
+     grid-area: f2;
+    margin-left: 1px;
+}
+.f3{
+    grid-area: f3;
+    margin-left: 1px;
+
+}
+/* 
+.containerindex{
+    width: 100%;
+    display: grid;
+    grid-gap: 4em;
+    grid-template-columns: repeat (12, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "name name name name name name name a1 a1 a1 a1 a1"
+    "name name name name name name name aa aa aa aa aa"
+    "ff ff ff ff ff ff ff bb bb bb bb bb"
+    "dd dd dd dd dd dd dd cc cc cc cc cc";
+
+}s
+.name{
+    grid-area: name;
+}
+.ff{
+    grid-area: ff;
+
+}
+.ww{
+    grid-area: ww;
+}
+.aa{
+    grid-area: aa;
+}
+
+.bb{
+    grid-area: bb;
+}
+.cc{
+    grid-area: cc;
+}
+
+.dd{
+    grid-area: dd;
+}
+
+.a1{
+    grid-area: a1;
+    border: solid 4px white;
+}
+ */

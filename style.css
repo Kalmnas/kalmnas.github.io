@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  color: white;
+  background-color: black;
+  margin: 2rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  list-style-type: none;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(12, 1 fr);
+  grid-template-rows: 30% auto auto auto auto 10%;
+  grid-template-areas:
+    "n n n n n n n n n n n n"
+    "f f f f f f w w w w w w"
+    "f f f f f f w w w w w w"
+    "a a a a a b b b b b b b"
+    "a a a a a b b b b b b b"
+    "f f f f f f f f f f f f";
+}
+
+.name {
+  grid-area: n;
+}
+.f {
+  grid-area: f;
+}
+.w {
+  grid-area: w;
+}
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+
+footer {
+  grid-area: f;
+}
